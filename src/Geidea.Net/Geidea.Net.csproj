@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>The missing .NET SDK for Geidea — the MENA payment gateway (Saudi, Egypt, UAE). Hosted checkout sessions, orders, refunds, cancellations, and HMAC-SHA256 callback validation.</Description>
+    <AssemblyTitle>Geidea.Net</AssemblyTitle>
+    <Authors>Eslam Ashraf;Github Contributors</Authors>
+    <PackageTags>geidea;payments;mena;saudi;egypt;uae;gateway;sdk</PackageTags>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <Version>1.0.0</Version>
+    <PackageId>Geidea.Net</PackageId>
+    <RootNamespace>Geidea</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <RepositoryUrl>https://github.com/SENESO/Geidea.Net</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/SENESO/Geidea.Net</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Initial release: hosted checkout sessions, order lookup, refunds, cancellations, and HMAC-SHA256 callback validation for Geidea's Saudi, Egypt, and UAE environments.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\docs\icon.png" Pack="true" PackagePath="icon.png" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="README.md" />
+  </ItemGroup>
+
+</Project>
